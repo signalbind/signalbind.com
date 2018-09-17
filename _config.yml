@@ -1,39 +1,43 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Syntax highlighting
+markdown:            kramdown
+highlighter:         pygments
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Signalbind Security 
-#description: >- # this means to ignore newlines until "baseurl:"
-#   The site of the Signalbind application security group
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: signalbindsecurity 
+# Permalinks
+permalink:           /:title
+#relative_permalinks: true
 
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+# Setup
+#timezone:            US/Kathmandu # eg. Asia/Kathmandu
+locale:              en_us # eg. en_us
+name:				         Signalbind
+title:               Signalbind
+#tagline:             'tagline'
+description:         'Application Security'
+url:                 https://signalbind.com
+#rss:                 rss feed url
+baseurl:             '/'
+baseurl_posts_img:   '/assets/images/posts/'
+baseurl_featured_img: '/assets/images/hero/'
+baseurl_featured_thumbnail: '/assets/images/thumbnail/'
+baseurl_javascripts: '/assets/javascripts/'
+#icon:                your site icon path # /assets/img/icon.png [best 300px X 300px]
+#disqus:              disqus_shortname # get it on https://disqus.com/admin/
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+author:
+  name:           	 Signalbind
+  url:            	 https://signalbind.com
+  facebook:          signalbind
+
+
+# Server
+#destination:      	 /
+exclude:          	 [".editorconfig", ".gitignore", "bower.json", "composer.json", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "sass", "haml"]
+port:             	 4000
+
+defaults:
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "default"
