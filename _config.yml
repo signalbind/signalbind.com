@@ -27,11 +27,12 @@ author:
   name:           	 Signalbind
   url:            	 https://signalbind.com
   facebook:          signalbind
+  twitter:           signalbind
 
 
 # Server
 #destination:      	 /
-exclude:          	 [".editorconfig", ".gitignore", "bower.json", "composer.json", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "sass", "haml"]
+exclude:          	 [".editorconfig", ".gitignore", "bower.json", "composer.json", ".DS_Store", ".git", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "sass", "haml"]
 port:             	 4000
 
 defaults:
