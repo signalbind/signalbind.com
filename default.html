@@ -12,37 +12,5 @@
 </head>
 <body>
 <h1>confirmation page</h1>
-<script src="https://apis.google.com/js/platform.js?onload=renderOptIn" async defer></script>
-
-<script>
-  window.renderOptIn = function() {
-    window.gapi.load('surveyoptin', function() {
-      window.gapi.surveyoptin.render(
-        {
-          // REQUIRED FIELDS
-          "merchant_id": 126607990,
-          "order_id": "32342342",
-          "email": "bindsignal@gmail.com",
-          "delivery_country": "US",
-          "estimated_delivery_date": "2018-10-19",
-
-          // OPTIONAL FIELDS
-          //"products": [{"gtin":"product1"}, {"gtin":"product2"}]
-        });
-    });
-  }
-</script>
-
-<script src="https://apis.google.com/js/platform.js?onload=renderBadge" async defer></script>
-
-<script>
-  window.renderBadge = function() {
-    var ratingBadgeContainer = document.createElement("div");
-    document.body.appendChild(ratingBadgeContainer);
-    window.gapi.load('ratingbadge', function() {
-      window.gapi.ratingbadge.render(ratingBadgeContainer, {"merchant_id": 126607990});
-    });
-  }
-</script>
 </body>
 </html>
